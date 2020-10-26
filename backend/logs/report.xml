@@ -1,0 +1,85 @@
+<testsuites tests="19" errors="0" failures="1" time="3.475">
+<testsuite name="DELETE /contacts dado que eu tenho um contato indesejado" tests="2" skipped="0" errors="0" time="0.226">
+<testcase classname="DELETE /contacts dado que eu tenho um contato indesejado" name="quando eu apago esse contato" time="0.222">
+
+    </testcase>
+<testcase classname="DELETE /contacts dado que eu tenho um contato indesejado" name="deve retornar 204" time="0.004">
+
+    </testcase>
+</testsuite>
+<testsuite name="GET /contacts" tests="2" skipped="0" errors="1" time="0.004">
+<testcase classname="GET /contacts" name="deve retornar 200" time="0.001">
+
+    </testcase>
+<testcase classname="GET /contacts" name="deve retornar uma lista" time="0.003">
+<failure message="Expected undefined to be an array but got &#x27;undefined&#x27;" type="Error">
+        <![CDATA[Error: Expected undefined to be an array but got &#x27;undefined&#x27;
+    at internals.Assertion.method [as array] (c:\qaninja\devtester\zaplink\backend\node_modules\@hapi\code\lib\index.js:186:21)
+    at c:\qaninja\devtester\zaplink\backend\tests\get.test.js:50:36
+    at Immediate._onImmediate (c:\qaninja\devtester\zaplink\backend\node_modules\@hapi\lab\lib\runner.js:661:35)
+    at processImmediate (internal/timers.js:456:21)]]>
+      </failure>
+    </testcase>
+</testsuite>
+<testsuite name="POST /contacts quando o payload é válido" tests="2" skipped="0" errors="0" time="0.003">
+<testcase classname="POST /contacts quando o payload é válido" name="deve retornar 200" time="0.002">
+
+    </testcase>
+<testcase classname="POST /contacts quando o payload é válido" name="deve retornar o id do contato" time="0.001">
+
+    </testcase>
+</testsuite>
+<testsuite name="POST /contacts quando o payload é vazio" tests="1" skipped="0" errors="0" time="0">
+<testcase classname="POST /contacts quando o payload é vazio" name="deve retornar 400" time="0">
+
+    </testcase>
+</testsuite>
+<testsuite name="POST /contacts quando o payload não tem o nome" tests="2" skipped="0" errors="0" time="0.002">
+<testcase classname="POST /contacts quando o payload não tem o nome" name="deve retornar 409" time="0.001">
+
+    </testcase>
+<testcase classname="POST /contacts quando o payload não tem o nome" name="deve retornar uma mensagem" time="0.001">
+
+    </testcase>
+</testsuite>
+<testsuite name="POST /contacts quando o nome está em branco" tests="2" skipped="0" errors="0" time="0.002">
+<testcase classname="POST /contacts quando o nome está em branco" name="deve retornar 409" time="0.001">
+
+    </testcase>
+<testcase classname="POST /contacts quando o nome está em branco" name="deve retornar uma mensagem" time="0.001">
+
+    </testcase>
+</testsuite>
+<testsuite name="POST /contacts quando o payload não tem o WhatsApp" tests="2" skipped="0" errors="0" time="0.002">
+<testcase classname="POST /contacts quando o payload não tem o WhatsApp" name="deve retornar 409" time="0.001">
+
+    </testcase>
+<testcase classname="POST /contacts quando o payload não tem o WhatsApp" name="deve retornar uma mensagem" time="0.001">
+
+    </testcase>
+</testsuite>
+<testsuite name="POST /contacts quando o WhatsApp está em branco" tests="2" skipped="0" errors="0" time="0.002">
+<testcase classname="POST /contacts quando o WhatsApp está em branco" name="deve retornar 409" time="0.001">
+
+    </testcase>
+<testcase classname="POST /contacts quando o WhatsApp está em branco" name="deve retornar uma mensagem" time="0.001">
+
+    </testcase>
+</testsuite>
+<testsuite name="POST /contacts quando o payload não tem a descrição" tests="2" skipped="0" errors="0" time="0.002">
+<testcase classname="POST /contacts quando o payload não tem a descrição" name="deve retornar 409" time="0.001">
+
+    </testcase>
+<testcase classname="POST /contacts quando o payload não tem a descrição" name="deve retornar uma mensagem" time="0.001">
+
+    </testcase>
+</testsuite>
+<testsuite name="POST /contacts quando a descrição está em branco" tests="2" skipped="0" errors="0" time="0.002">
+<testcase classname="POST /contacts quando a descrição está em branco" name="deve retornar 409" time="0.001">
+
+    </testcase>
+<testcase classname="POST /contacts quando a descrição está em branco" name="deve retornar uma mensagem" time="0.001">
+
+    </testcase>
+</testsuite>
+</testsuites>
